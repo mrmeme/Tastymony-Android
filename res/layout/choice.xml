@@ -6,7 +6,7 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_movie1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
@@ -87,16 +87,17 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_movie2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
 
     <LinearLayout
-        android:id="@+id/LinearLayout01"
+        android:id="@+id/ll_movie2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:visibility="gone" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -164,16 +165,17 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_movie3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
 
     <LinearLayout
-        android:id="@+id/LinearLayout02"
+        android:id="@+id/ll_movie3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:visibility="gone" >
 
         <LinearLayout
             android:layout_width="match_parent"
