@@ -3,97 +3,42 @@
     android:id="@+id/ll_general"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6e6e6"
     android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="1sp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Waiting for your next movie..."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/bacon_man" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_movie1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:background="#333333"
+        android:textColor="@android:color/white"
+        android:text=" " />
 
     <LinearLayout
         android:id="@+id/ll_movie1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/h" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Batman Begin"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textSize="22sp" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Christopher Nolan"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="18sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Comment un homme seul peut-il changer le monde ? Telle est la question qui hante Bruce Wayne depuis cette nuit tragique où ses parents furent abattus sous ses yeux, dans une ruelle de Gotham City. Torturé par un profond sentiment de colère et de culpabilité, le jeune héritier de cette richissime famille fuit Gotham pour un long et discret voyage à travers le monde. Le but de ses pérégrinations : sublimer sa soif de vengeance en trouvant de nouveaux moyens de lutter contre l&apos;injustice."
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textSize="14sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Watch trailer" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Watch movie" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="More like this" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_movie2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <LinearLayout
-        android:id="@+id/ll_movie2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -104,7 +49,7 @@
             android:layout_height="wrap_content" >
 
             <ImageView
-                android:id="@+id/ImageView01"
+                android:id="@+id/iv_movie1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/h" />
@@ -115,15 +60,15 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/TextView02"
+                    android:id="@+id/tv_title1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Batman Begin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textSize="22sp" />
+                    android:textSize="30sp" />
 
                 <TextView
-                    android:id="@+id/TextView03"
+                    android:id="@+id/tv_date1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Christopher Nolan"
@@ -133,7 +78,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/TextView01"
+            android:id="@+id/tv_synopsis1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Comment un homme seul peut-il changer le monde ? Telle est la question qui hante Bruce Wayne depuis cette nuit tragique où ses parents furent abattus sous ses yeux, dans une ruelle de Gotham City. Torturé par un profond sentiment de colère et de culpabilité, le jeune héritier de cette richissime famille fuit Gotham pour un long et discret voyage à travers le monde. Le but de ses pérégrinations : sublimer sa soif de vengeance en trouvant de nouveaux moyens de lutter contre l&apos;injustice."
@@ -142,25 +87,123 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="5pt" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watch trailer"
+                
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watch movie"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_more1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#333333"
+        android:textColor="@android:color/white"
+                android:text="More like this" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_movie2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:textColor="@android:color/white"
+        android:text=" " />
+
+    <LinearLayout
+        android:id="@+id/ll_movie2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5pt"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_movie2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/h" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batman Begin"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tv_date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Christopher Nolan"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_synopsis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment un homme seul peut-il changer le monde ? Telle est la question qui hante Bruce Wayne depuis cette nuit tragique où ses parents furent abattus sous ses yeux, dans une ruelle de Gotham City. Torturé par un profond sentiment de colère et de culpabilité, le jeune héritier de cette richissime famille fuit Gotham pour un long et discret voyage à travers le monde. Le but de ses pérégrinations : sublimer sa soif de vengeance en trouvant de nouveaux moyens de lutter contre l&apos;injustice."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
 
             <Button
                 android:id="@+id/Button01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Watch trailer" />
+                android:text="Watch trailer"
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/Button02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Watch movie" />
+                android:text="Watch movie"
+                android:visibility="gone" />
 
             <Button
-                android:id="@+id/Button03"
+                android:id="@+id/btn_more2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="More like this" />
+                android:background="#333333"
+                android:paddingBottom="5pt"
+                android:text="More like this"
+                android:textColor="@android:color/white" />
+
         </LinearLayout>
     </LinearLayout>
 
@@ -168,7 +211,9 @@
         android:id="@+id/btn_movie3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:background="#333333"
+        android:textColor="@android:color/white"
+        android:text=" " />
 
     <LinearLayout
         android:id="@+id/ll_movie3"
@@ -182,7 +227,7 @@
             android:layout_height="wrap_content" >
 
             <ImageView
-                android:id="@+id/ImageView02"
+                android:id="@+id/iv_movie3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/h" />
@@ -193,15 +238,15 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/TextView05"
+                    android:id="@+id/tv_title3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Batman Begin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textSize="22sp" />
+                    android:textSize="30sp" />
 
                 <TextView
-                    android:id="@+id/TextView06"
+                    android:id="@+id/tv_date3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Christopher Nolan"
@@ -211,7 +256,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/TextView04"
+            android:id="@+id/tv_synopsis3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Comment un homme seul peut-il changer le monde ? Telle est la question qui hante Bruce Wayne depuis cette nuit tragique où ses parents furent abattus sous ses yeux, dans une ruelle de Gotham City. Torturé par un profond sentiment de colère et de culpabilité, le jeune héritier de cette richissime famille fuit Gotham pour un long et discret voyage à travers le monde. Le but de ses pérégrinations : sublimer sa soif de vengeance en trouvant de nouveaux moyens de lutter contre l&apos;injustice."
@@ -220,24 +265,31 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="5pt" >
 
             <Button
                 android:id="@+id/Button04"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Watch trailer" />
+                android:text="Watch trailer"
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/Button05"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Watch movie" />
+                android:text="Watch movie"
+                android:visibility="gone" />
 
             <Button
-                android:id="@+id/Button06"
+                android:id="@+id/btn_more3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#333333"
+        android:textColor="@android:color/white"
                 android:text="More like this" />
         </LinearLayout>
     </LinearLayout>
